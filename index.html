@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App | Check Weather Of Any Country</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+
+        <div class="searchBar">
+            <div class="searchBox">
+                <input type="search" placeholder="enter city name" name="searchBox">
+            </div>
+            <div class="searchIcon">
+                <img src="search.png" alt="">
+            </div>
+        </div>
+
+        <div class="weather-details">
+            <div class="middle-part d-flex justify-content-center align-items-center flex-column">
+                <img src="clouds.png" alt="">
+                <h1 class="temp">20°C</h1>
+                <h2 class="cityName">New York</h2>
+            </div>
+            <div class="lower-part">
+                <div class="humidity d-flex justify-content-evenly align-items-center">
+                    <div class="humidity-icon">
+                        <img src="humidity.png" alt="">
+                    </div>
+                    <div class="humidity-value">
+                        <p>50%</p>
+                        <h3>Humidity</h3>
+                    </div>
+                </div>
+                <div class="wind-speed d-flex justify-content-evenly align-items-center">
+                    <div class="wind-icon">
+                        <img src="wind.png" alt="">
+                    </div>
+                    <div class="wind-value">
+                        <p>40km/h</p>
+                        <h3>Wind Speed</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+   <!-- my scripts -->
+   <script src="function.js"></script>
+
+    <!-- bootstarp script tag start -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

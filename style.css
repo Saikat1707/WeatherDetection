@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Climate+Crisis&family=Concert+One&family=Josefin+Sans:wght@600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    font-family: 'Poppins';
+}
+.container-fluid{
+  background: linear-gradient(to bottom right, black, rgb(55, 55, 173));
+  width: 35%;
+  /* height: 60%; */
+  height: auto;
+  padding: 40px;
+  border-radius: 50px;
+  
+}
+.searchBar{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+
+}
+.searchBox{
+    width: 80%;
+}
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+}
+input::placeholder{
+    margin-left: 40px;
+    padding: 10px;
+}
+input[type="search"]:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); 
+    outline: none; 
+}
+input[type="search"] {
+    color: black; 
+    font-size: 16px; 
+}
+.searchIcon{
+    width: 10%;
+    height: 50px;
+    margin-left: 30px;
+    background-color: white;
+    text-align: center;
+    border-radius:50% ;
+}
+.searchIcon img{
+    height: 30px;
+    width: auto;
+    margin-top: 10px;
+    transition: all 0.4s ease-in-out;
+
+}
+.searchIcon img:hover{
+    transform: rotate(360deg);
+}
+.weather-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.lower-part{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.middle-part h1{
+    color: white;
+    font-size: 40px;
+    font-family: "Concert One", sans-serif;
+}
+.middle-part h2{
+    color: white;
+    font-size: 45px;
+    font-family: "Concert One", sans-serif;
+}
+.humidity-icon img{
+    width: 50px;
+    height: 50px;
+}
+.wind-icon img{
+    width: 50px;
+    height: 50px;
+}
+.humidity{
+    position: relative;
+    height: 40px;
+}
+.wind-speed{
+    height: 40px;
+    position: relative;
+}
+.wind-value{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.wind-value p{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.humidity-value p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.wind-value h3{
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    position: absolute;
+    top: 20px;
+    letter-spacing: 2px;
+
+}
+.humidity-value h3{
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    position: absolute;
+    top: 20px;
+    letter-spacing: 2px;
+
+}
+@media (max-width:1200px){
+    .container-fluid{
+        width: 70%;
+    }
+}
+@media (max-width:600px){
+    .container-fluid{
+        width: 90%;
+    }
+}
+@media (max-width:450px){
+    .container-fluid{
+        width: 100%;
+    }
+}
+@media (max-width:400px){
+    .wind-icon img{
+        width: 30px;
+        height: 30px;
+    }
+    .humidity-icon img{
+        width: 30px;
+        height: 30px;
+    }
+    .wind-value p{
+        font-size: 15px;
+       
+    }
+    .humidity-value p{
+        font-size: 15px;
+       
+    }
+    .wind-value h3{
+        font-size: 10px;
+       
+    
+    }
+    .humidity-value h3{
+        font-size: 10px;
+        
+    
+    }
+}
+@media (max-width:320px){
+    .wind-icon img{
+        width: 25px;
+        height: 25px;
+    }
+    .humidity-icon img{
+        width: 25px;
+        height: 25px;
+    }
+    .wind-value p{
+        font-size: 10px;
+       
+    }
+    .humidity-value p{
+        font-size: 10px;
+       
+    }
+    .wind-value h3{
+        font-size: 8px;
+       
+    
+    }
+    .humidity-value h3{
+        font-size: 8px;
+        
+    
+    }
+}
